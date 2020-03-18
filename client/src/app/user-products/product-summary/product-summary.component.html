@@ -1,0 +1,29 @@
+<h1>Products Overview</h1>
+
+<div *ngIf="(service.productGroups$ | async) as groups;else noProducts">
+
+  <h2>Savings</h2>
+  <div class="products-group" *ngIf="(service.savingsProducts$ | async) as savings;else noProducts">
+    <div class="product-container" *ngFor="let product of savings" [routerLink]="['/detail', product.id]" >
+      <h3>{{product.product_name}} - {{product.balance | currency:'EUR'}}</h3>
+    </div>
+  </div>
+
+  <h2>Payments</h2>
+  <div class="products-group" *ngIf="(service.paymentsProducts$ | async) as payments;else noProducts">
+    <div class="product-container" *ngFor="let product of payments" [routerLink]="['/detail', product.id]">
+      <h3>{{product.product_name}} - {{product.balance | currency:'EUR'}}</h3>
+    </div>
+  </div>
+
+  <h2>Mortgages</h2>
+  <div class="products-group" *ngIf="(service.mortgagesProducts$ | async) as mortgages;else noProducts">
+    <div class="product-container" *ngFor="let product of mortgages" [routerLink]="['/detail', product.id]">
+      <h3>{{product.product_name}} - {{product.balance | currency:'EUR'}}</h3>
+    </div>
+  </div>
+</div>
+
+<ng-template #noProducts>
+  <h3>No Products found!</h3>
+</ng-template>

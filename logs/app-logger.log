@@ -1,0 +1,72 @@
+18:58:53.954 [main] INFO  c.i.u.UserServiceTestWithMockDB - Starting UserServiceTestWithMockDB on FIT-LT00044 with PID 9044 (started by vpandya in C:\Users\vpandya\Personal Docs\Cert\hcl-hackthon)
+18:58:53.964 [main] INFO  c.i.u.UserServiceTestWithMockDB - The following profiles are active: test
+18:58:55.318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:58:55.544 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 208ms. Found 4 repository interfaces.
+18:58:56.369 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4244552e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:58:56.615 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+18:58:57.047 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+18:58:57.370 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:58:57.564 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.3.10.Final}
+18:58:57.570 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:58:58.088 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:58:58.579 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:58:59.299 [main] INFO  o.h.t.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.ing.entity.UserStatistics (class must be instantiated by Interceptor)
+18:58:59.781 [main] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Users/vpandya/Personal%20Docs/Cert/hcl-hackthon/target/test-classes/import.sql)'
+18:58:59.797 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:59:00.874 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 36cc3196-80f0-4aab-93e0-04b3f710a356
+
+18:59:01.097 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@129aaac1, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d202dc4, org.springframework.security.web.header.HeaderWriterFilter@2761156e, org.springframework.security.web.authentication.logout.LogoutFilter@6bfdaed7, com.ing.controller.XHeaderAuthenticationFilter@3370be55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6aa792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2245ccaa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d2b13f, org.springframework.security.web.session.SessionManagementFilter@de40aa1, org.springframework.security.web.access.ExceptionTranslationFilter@34065642, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ae88712]
+18:59:01.859 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:59:01.938 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:59:02.441 [main] INFO  c.i.u.UserServiceTestWithMockDB - Started UserServiceTestWithMockDB in 9.4933995 seconds (JVM running for 11.671)
+18:59:02.634 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:59:02.792 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+18:59:02.795 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:59:02.797 [Thread-3] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+18:59:02.802 [Thread-3] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90121, SQLState: 90121
+18:59:02.803 [Thread-3] ERROR o.h.e.j.s.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+18:59:02.810 [Thread-3] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90121, SQLState: 90121
+18:59:02.810 [Thread-3] ERROR o.h.e.j.s.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+18:59:02.810 [Thread-3] INFO  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.GenericJDBCException: Unable to release JDBC Connection used for DDL execution
+18:59:02.814 [Thread-3] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:59:02.820 [Thread-3] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:59:48.755 [main] INFO  c.i.u.UserServiceTestWithMockDB - Starting UserServiceTestWithMockDB on FIT-LT00044 with PID 15084 (started by vpandya in C:\Users\vpandya\Personal Docs\Cert\hcl-hackthon)
+18:59:48.756 [main] INFO  c.i.u.UserServiceTestWithMockDB - The following profiles are active: test
+18:59:50.166 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:59:50.294 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119ms. Found 4 repository interfaces.
+18:59:50.905 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be0d7ecd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:59:51.089 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+18:59:51.362 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+18:59:51.672 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:59:51.799 [main] INFO  o.h.Version - HHH000412: Hibernate Core {5.3.10.Final}
+18:59:51.806 [main] INFO  o.h.c.Environment - HHH000206: hibernate.properties not found
+18:59:52.038 [main] INFO  o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:59:52.537 [main] INFO  o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+18:59:53.013 [main] INFO  o.h.t.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.ing.entity.UserStatistics (class must be instantiated by Interceptor)
+18:59:53.355 [main] INFO  o.h.t.s.i.SchemaCreatorImpl - HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/C:/Users/vpandya/Personal%20Docs/Cert/hcl-hackthon/target/test-classes/import.sql)'
+18:59:53.366 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:59:54.310 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a42a0df0-0e75-4ca7-99fe-faca5d428e53
+
+18:59:54.534 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55315a00, org.springframework.security.web.context.SecurityContextPersistenceFilter@194eae3e, org.springframework.security.web.header.HeaderWriterFilter@28515443, org.springframework.security.web.authentication.logout.LogoutFilter@37344d31, com.ing.controller.XHeaderAuthenticationFilter@4942e6af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@de40aa1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c78f456, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73a1a1b4, org.springframework.security.web.session.SessionManagementFilter@5da1a97f, org.springframework.security.web.access.ExceptionTranslationFilter@1002b06d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@510a2c7]
+18:59:55.271 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:59:55.338 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:59:55.847 [main] INFO  c.i.u.UserServiceTestWithMockDB - Started UserServiceTestWithMockDB in 8.4124709 seconds (JVM running for 11.699)
+18:59:56.027 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+18:59:56.197 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+18:59:56.202 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:59:56.203 [Thread-3] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+18:59:56.210 [Thread-3] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90121, SQLState: 90121
+18:59:56.210 [Thread-3] ERROR o.h.e.j.s.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+18:59:56.216 [Thread-3] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90121, SQLState: 90121
+18:59:56.216 [Thread-3] ERROR o.h.e.j.s.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+18:59:56.216 [Thread-3] INFO  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.GenericJDBCException: Unable to release JDBC Connection used for DDL execution
+18:59:56.219 [Thread-3] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:59:56.224 [Thread-3] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

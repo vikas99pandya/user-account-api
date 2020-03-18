@@ -1,0 +1,22 @@
+<div *ngIf="(service.currentProduct$ | async) as product;else noDetails">
+  <h1>{{product.name}}</h1>
+  <table>
+    <tr>
+      <td>account: </td>
+      <td>{{product.account}}</td>
+    </tr>
+    <tr>
+      <td>balance: </td>
+      <td>{{product.balance}}</td>
+    </tr>
+    <tr>
+      <td>Interest Rate: </td>
+      <td>{{product.interest_rate}}</td>
+    </tr>
+    <tr>
+      <td>Earnings: </td>
+      <td>{{product.earnings}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #noDetails>No Details!</ng-template>
